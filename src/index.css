@@ -1,68 +1,103 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import "../node_modules/modern-normalize/modern-normalize.css";
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/HelveticaNeueRoman.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/HelveticaNeueMedium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/HelveticaNeueBold.otf") format("opentype");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: currentColor;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body.red {
+  --theme-main: #f03f3b;
+  --theme-light: rgba(240, 63, 59, 0.2);
+}
+
+body.green {
+  --theme-main: #103931;
+  --theme-light: rgba(16, 57, 49, 0.2);
+}
+
+body.blue {
+  --theme-main: #0957c3;
+  --theme-light: rgba(9, 87, 195, 0.2);
+}
+
+body.home {
+  background-color: var(--white-main);
+}
+
+body.app {
+  background-color: var(--white-back);
+}
+
+:root {
+  font-family: "Helvetica Neue", sans-serif;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+  /* COLORS */
+  --black-main: #11101c;
+  --white-main: #fbfbfb;
+  --white-back: #f3f3f3;
+  --error-main: orangered;
+  --transp-button-border: rgba(251, 251, 251, 0.4);
+  --rating: #ffc531;
+  --price: #38cd3e;
+  --grey-modal-border: rgba(17, 16, 28, 0.1);
+  --grey-modal: rgba(17, 16, 28, 0.3);
+  --grey-text: rgba(17, 16, 28, 0.5);
+  --feature-name: #8a8a89;
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+  /* ANIMATION */
+  --duration: 300ms;
+  --time-function: ease-in-out;
 }
