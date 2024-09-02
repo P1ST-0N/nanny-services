@@ -1,0 +1,15 @@
+.button {
+    background-color: transparent;
+    border: none;
+
+    stroke: var(--white-main);
+
+    transition:
+        transform var(--duration) var(--time-function),
+        stroke var(--duration) var(--time-function);
+}
+
+.button:hover,
+.button:focus {
+    transform: scale(1.1);
+}
