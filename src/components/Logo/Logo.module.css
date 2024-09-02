@@ -1,0 +1,20 @@
+.logo {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 117%;
+    letter-spacing: -0.02em;
+    color: var(--white-main);
+
+    transition: transform var(--duration) var(--time-function);
+}
+
+.logo:hover,
+.logo:focus {
+    transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+    .logo {
+        font-size: 24px;
+    }
+}
