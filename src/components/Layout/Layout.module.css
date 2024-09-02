@@ -1,0 +1,40 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+
+    background-color: transparent;
+}
+
+.app {
+    padding-bottom: 16px;
+    padding-top: 60px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+@media (min-width: 768px) {
+    .app {
+        padding-bottom: 24px;
+        padding-top: 88px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+@media (min-width: 1024px) {
+    .app {
+        padding-bottom: 32px;
+        padding-top: 88px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .app {
+        padding-bottom: 64px;
+        padding-top: 152px;
+        padding-left: 128px;
+        padding-right: 128px;
+    }
+}
