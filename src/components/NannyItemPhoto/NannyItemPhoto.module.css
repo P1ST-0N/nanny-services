@@ -1,0 +1,50 @@
+.container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid var(--theme-light);
+    border-radius: 30px;
+}
+
+.thumb {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow: hidden;
+}
+
+.online {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 9px;
+    right: 14px;
+    border-radius: 50%;
+    background-color: var(--price);
+    border: 2px solid var(--white-main);
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 100px;
+        height: 100px;
+        padding: 12px;
+    }
+}
+@media (min-width: 1024px) {
+    .container {
+        width: 100px;
+        height: 100px;
+        padding: 12px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        width: 120px;
+        height: 120px;
+        padding: 12px;
+    }
+}
