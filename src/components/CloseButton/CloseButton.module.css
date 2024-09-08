@@ -1,0 +1,23 @@
+.button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    stroke: var(--black-main);
+
+    transition:
+        transform var(--duration) var(--time-function),
+        stroke var(--duration) var(--time-function);
+}
+
+.button:hover,
+.button:focus {
+    transform: scale(1.1);
+    stroke: var(--theme-main);
+}
