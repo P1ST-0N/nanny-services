@@ -1,0 +1,43 @@
+.button {
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    color: var(--white-main);
+
+    transition: color var(--duration) var(--time-function);
+}
+
+.button:hover,
+.button:focus {
+    color: var(--theme-main);
+}
+
+.transparent {
+    background-color: transparent;
+    border: 1px solid var(--transp-button-border);
+
+    transition: border-color var(--duration) var(--time-function);
+}
+
+.transparent:hover,
+.transparent:focus {
+    border-color: var(--theme-light);
+}
+
+.filled {
+    background-color: var(--theme-main);
+    border: none;
+
+    transition: background-color var(--duration) var(--time-function);
+}
+
+.filled:hover,
+.filled:focus {
+    background-color: var(--white-main);
+}
