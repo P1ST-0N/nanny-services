@@ -1,0 +1,177 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.position {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--feature-name);
+    margin-bottom: 8px;
+}
+
+.header {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    color: var(--black-main);
+}
+
+.infoContainer {
+    display: flex;
+    gap: 48px;
+}
+
+.list {
+    display: flex;
+}
+
+.listItem {
+    position: relative;
+    height: fit-content;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.listItem:first-child {
+    padding-left: 0;
+}
+.listItem:last-child {
+    padding-right: 0;
+}
+
+.listItem::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    padding: 4px 0;
+    top: 0;
+    right: 0;
+    background-color: rgba(17, 16, 28, 0.2);
+    background-clip: content-box;
+}
+
+.listItem:last-child::after {
+    display: none;
+}
+
+.button {
+    width: 26px;
+    height: 26px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    fill: none;
+    stroke: var(--black-main);
+
+    transition: transform var(--duration) var(--time-function);
+}
+
+.button:hover,
+.button:focus {
+    transform: scale(1.1);
+}
+
+.favorite {
+    fill: var(--theme-main);
+    stroke: var(--theme-main);
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    color: var(--black-main);
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: none;
+    stroke: var(--black-main);
+}
+.star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--rating);
+    stroke: var(--rating);
+}
+
+.price {
+    color: var(--price);
+}
+
+@media (max-width: 767.9px) {
+    .headingContainer {
+        /* width: 40vw; */
+        position: absolute;
+        top: 16px;
+        left: 132px;
+    }
+
+    .button {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin-bottom: 16px;
+    }
+
+    .position {
+        font-size: 16px;
+    }
+
+    .header {
+        font-size: 20px;
+    }
+
+    .listItem {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+}
+@media (min-width: 1024px) {
+    .container {
+        margin-bottom: 16px;
+    }
+    .header {
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        margin-bottom: 24px;
+    }
+
+    .header {
+        font-size: 24px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+}
