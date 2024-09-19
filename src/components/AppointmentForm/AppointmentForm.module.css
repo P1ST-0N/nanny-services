@@ -1,0 +1,228 @@
+.form {
+    width: 100%;
+}
+
+.heading {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: var(--black-main);
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 14px;
+    line-height: 125%;
+    color: var(--grey-text);
+    margin-bottom: 10px;
+}
+
+.nannyContainer {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 10px;
+}
+
+.thumb {
+    border-radius: 15px;
+    width: 44px;
+    height: 44px;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nannyPosition {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 133%;
+    color: var(--feature-name);
+    margin-bottom: 4px;
+}
+
+.nannyName {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--black-main);
+}
+
+.inputGroup {
+    display: flex;
+    gap: 8px;
+}
+
+.inputWrapper {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.inputWrapperAdd {
+    width: calc(50% - 4px);
+}
+
+.input {
+    background: transparent;
+    display: block;
+    border: 1px solid var(--grey-modal-border);
+    border-radius: 12px;
+    padding: 10px 10px;
+    width: 100%;
+    height: 36px;
+    font-size: 14px;
+    line-height: 125%;
+    color: var(--black-main);
+    outline: none;
+
+    transition: border-color var(--duration) var(--time-function);
+}
+
+.input:hover,
+.input:focus {
+    border-color: var(--theme-main);
+}
+
+.input::placeholder {
+    color: var(--grey-text);
+}
+
+.errorText {
+    color: var(--error-main);
+    padding-left: 10px;
+    font-size: 10px;
+
+    position: absolute;
+}
+
+button.button {
+    width: 100%;
+    padding: 14px;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.comment {
+    height: 74px;
+    max-height: 74px;
+}
+
+.time-select {
+    background: transparent;
+    width: 100%;
+    height: 52px;
+}
+
+@media (min-width: 768px) {
+    .heading {
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+
+    .text {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .nannyName {
+        font-size: 16px;
+    }
+
+    .nannyContainer {
+        margin-bottom: 16px;
+    }
+
+    .inputWrapper {
+        margin-bottom: 16px;
+    }
+
+    .input {
+        padding: 14px 18px;
+        height: 48px;
+        font-size: 16px;
+    }
+
+    .comment {
+        height: 90px;
+        max-height: 90px;
+    }
+
+    .errorText {
+        padding-left: 16px;
+        font-size: 14px;
+    }
+
+    button.button {
+        padding: 14px;
+        height: 48px;
+        margin-top: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .heading {
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+
+    .text {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .nannyContainer {
+        margin-bottom: 16px;
+    }
+
+    .input {
+        padding: 14px 18px;
+        height: 48px;
+        font-size: 16px;
+    }
+
+    .comment {
+        height: 90px;
+        max-height: 90px;
+    }
+
+    button.button {
+        padding: 14px;
+        height: 48px;
+        margin-top: 16px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .heading {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .text {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .nannyContainer {
+        margin-bottom: 40px;
+    }
+
+    .input {
+        padding: 16px 18px;
+        height: 52px;
+        font-size: 16px;
+    }
+
+    .comment {
+        height: 116px;
+        max-height: 116px;
+    }
+
+    button.button {
+        padding: 16px;
+        height: 52px;
+        margin-top: 22px;
+    }
+}
