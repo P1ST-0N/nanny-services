@@ -1,0 +1,108 @@
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.linksList {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.nav {
+    /* display: block; */
+}
+
+.link {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: -0.01em;
+    color: var(--white-main);
+
+    transition: transform var(--duration) var(--time-function);
+}
+
+.link:hover,
+.link:focus {
+    transform: scale(1.1);
+}
+
+.buttonsList {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+button.button {
+    padding: 14px 40px;
+    height: 48px;
+    border: 1px solid var(--theme-light);
+
+    font-size: 16px;
+    line-height: 125%;
+}
+
+button.closeButton {
+    stroke: var(--white-main);
+}
+
+button.closeButton:hover,
+button.closeButton:focus {
+    stroke: var(--white-main);
+}
+
+button.userButton {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    margin-right: 16px;
+
+    transition: border-color var(--duration) var(--time-function);
+}
+
+button.userButton:hover,
+button.userButton:focus {
+    border-color: var(--white-main);
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--white-main);
+    fill: var(--theme-main);
+}
+
+.userName {
+    display: block;
+    max-width: 100px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 111%;
+    letter-spacing: -0.01em;
+    color: var(--white-main);
+    overflow: hidden;
+}
+
+@media (max-width: 767.9px) {
+    :global(.active)::after {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border: none;
+        background-color: var(--white-main);
+        position: absolute;
+        top: calc(50% - 4px);
+        left: -20px;
+    }
+}
