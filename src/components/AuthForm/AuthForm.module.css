@@ -1,0 +1,110 @@
+button.button {
+    width: 100%;
+    padding: 16px;
+    height: 52px;
+    /* margin-top: 22px; */
+}
+
+.heading {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: var(--black-main);
+    margin-bottom: 16px;
+}
+
+.text {
+    max-width: 438px;
+    font-size: 16px;
+    line-height: 125%;
+    color: var(--grey-text);
+    margin-bottom: 20px;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.input {
+    background: transparent;
+    display: block;
+    border: 1px solid var(--grey-modal-border);
+    border-radius: 12px;
+    padding: 16px 18px;
+    width: 100%;
+    height: 52px;
+    outline: none;
+    color: var(--black-main);
+
+    transition: border-color var(--duration) var(--time-function);
+}
+
+.input:hover,
+.input:focus {
+    border-color: var(--theme-main);
+}
+
+.input::placeholder {
+    color: var(--grey-text);
+}
+
+.inputWrapper {
+    position: relative;
+}
+
+.passButton {
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    fill: none;
+    stroke: var(--black-main);
+
+    transition:
+        transform var(--duration) var(--time-function),
+        stroke var(--duration) var(--time-function);
+}
+
+.passButton:hover,
+.passButton:focus {
+    transform: scale(1.1);
+    stroke: var(--theme-main);
+}
+
+.errorText {
+    color: var(--error-main);
+    padding-left: 16px;
+    font-size: 14px;
+
+    position: absolute;
+}
+
+@media (min-width: 768px) {
+    .heading {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .text {
+        max-width: 438px;
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .input {
+        padding: 16px 18px;
+        width: 100%;
+        height: 52px;
+    }
+
+    button.button {
+        margin-top: 22px;
+    }
+}
