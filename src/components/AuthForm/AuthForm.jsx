@@ -11,3 +11,5 @@ import authOperations from "../../redux/auth/operations.js";
 import authSelectors from "../../redux/auth/selectors.js";
 import schemas from "../../schemas";
 import css from "./AuthForm.module.css";
+
+import { useLocation } from "react-router-dom";
